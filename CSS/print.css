@@ -2,6 +2,7 @@ body{
     background-color: #ffffff;
     color: #000000;
     margin: 10px;
+    font-size: 12px;
 }
 
 .imggg{
@@ -27,4 +28,16 @@ body{
 h1{
     display: flex;
     justify-content: center;
+}
+
+.video{
+    display:none;
+}
+
+.cssbut{
+    display:none;
+}
+
+.menus{
+    margin: 20px;
 }

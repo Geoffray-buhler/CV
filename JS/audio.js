@@ -22,4 +22,16 @@ window.addEventListener("load", function() {
         $audio1.pause();
         $audio1.currentTime = 30;
     });
+
+    var csschange = document.getElementById('csschange');
+    var css01 = document.getElementById('css01');
+    var css02 = document.getElementById('css02');
+
+    css01.addEventListener('click', function() {
+        csschange = document.getElementById('css').href='./CSS/style.css';
+    });
+
+    css02.addEventListener('click', function() {
+        csschange = document.getElementById('css').href='./CSS/style2.css';
+    });
 })

@@ -101,12 +101,13 @@ body{
     color:#65fe3f;
     background-color:#262626;
     font-size: 150%;
+    overflow-x: hidden;
 }
 
-.entete,.corpcv,h1{
+.entete,.corpcv,h1,.objet{
     border-radius: 12px;
     display: flex;
-    background: url(./LYnrrzN.png);
+    background: url(..//img/LYnrrzN.png);
     border: solid;
     border: outset rgb(51, 255, 0);
 }
@@ -117,9 +118,22 @@ body{
     flex-direction: column;
 }
 
+.menus{
+    background: url(../img/bande.png);
+    display: flex;
+    justify-content: center;
+
+}
+
 .entete .mimi{ 
     display: flex;
     flex:center;
+}
+
+.objet{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .corpcv{
@@ -180,4 +194,64 @@ h2{
 
 #bgvideo{
     display:none;
+}
+
+.menus{
+    width: 12%;
+}
+
+.imgbande{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -50;
+}
+@keyframes slide {
+    0%{
+        transform: translate3d(0px,0,0);
+    }
+    100%{
+        transform: translate3d(-350px,0,0);
+    }
+}
+
+@keyframes slide-out {
+    0%{
+        transform: translate3d(-350px,0,0);
+    }
+    100%{
+        transform: translate3d(0px,0,0);
+    }
+}
+.cssbut{
+    transform: translate3d(-300px,0,0);
+    position: absolute;
+    display: flex;
+    width: 495px;
+    height: 120px;
+    right: -470px;
+    align-items: center;
+    justify-content: center;
+    animation: slide-out 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.cssbut:hover{
+    animation: slide 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#css01{
+    width:100px ;
+    height: 30px;
+    z-index: 100;
+    margin-right: 10px;
+}
+
+#css02{
+    z-index: 100;
+    width:100px ;
+    height: 30px;
 }
