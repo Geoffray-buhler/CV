@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+
+body{
+    font-family: 'Grenze', serif;
+    color:#25baff;
+    background: linear-gradient(#ffffff,#06b2b8);
+    font-size: 120%;
+    display:flex;
+    flex-direction: row;
+}
+
+.imggg{
+    display:none;
+}
+
+.imggg2{
+    display:none;
+}
+
+.mimi{
+    width: 100px;
+    height: 150px;
+    border: solid;
+    border: #2c2615;
+    border-radius: 20px;
+}
+
+.mimicont{
+    width: 100;
+    height: 150;
+
+}
+
+.entete{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: #2c2615aa;
+    border: solid;
+    border-radius: 20px;
+}
+
+aside{
+    background: #06b2b8aa;
+}
+
+.corpcv{
+    background: #2c2615aa;
+    border: solid;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+video#bgvideo {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background: url(Flower26790.mp4) no-repeat;
+    background-size: cover;
+}

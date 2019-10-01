@@ -1,0 +1,30 @@
+body{
+    background-color: #ffffff;
+    color: #000000;
+    margin: 10px;
+}
+
+.imggg{
+    display:none;
+}
+
+.imggg2{
+    display: none;
+}
+
+.mimi{
+    width: 100px;
+    height: 140px;
+    margin-left: 80%; 
+}
+
+.entete{
+    order: 1;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
