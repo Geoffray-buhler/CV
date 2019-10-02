@@ -21,8 +21,7 @@ body{
 
 .mimi{
     width: 100px;
-    height: 150px;
-    border: solid;
+    height: 140px;
     border: #2c2615;
     border-radius: 20px;
 }
@@ -83,13 +82,13 @@ video#bgvideo {
         transform: translate3d(0px,0,0);
     }
     100%{
-        transform: translate3d(-350px,0,0);
+        transform: translate3d(-400px,0,0);
     }
 }
 
 @keyframes slide-out {
     0%{
-        transform: translate3d(-350px,0,0);
+        transform: translate3d(-400px,0,0);
     }
     100%{
         transform: translate3d(0px,0,0);

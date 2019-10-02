@@ -10,28 +10,54 @@
 // }
 
 
+
+
 window.addEventListener("load", function() {
-    var $audio1 = document.getElementById("a200");
+    var activeCSS = 'style2';
+
+    var $css01 = document.getElementById('css01');
+    var $css02 = document.getElementById('css02');
+    var $cssLink = document.getElementById('css');
+
+    var $audio1 = document.getElementById("audiolisten");
     var $mimicont = document.getElementById("mimicont");
 
-    $mimicont.addEventListener('mouseenter', function playAudio() {
-        $audio1.play();
-        $audio1.currentTime = 30;
+    document.addEventListener('keydown', function playAudio(event) {
+        if (event.key == 'p') { 
+            if (activeCSS != 'style') {
+                $audio1.pause();
+                $audio1.currentTime = 50;
+            } else {
+                $audio1.play();
+                $audio1.currentTime = 50;
+            }
+        }
     });
-    $mimicont.addEventListener('mouseleave', function stopAudio() {
-        $audio1.pause();
-        $audio1.currentTime = 30;
+    document.addEventListener('keydown', function stopAudio(event) {
+        if (event.key == 'o') {
+            $audio1.pause();
+            $audio1.currentTime = 50;
+        }
     });
 
-    var csschange = document.getElementById('csschange');
-    var css01 = document.getElementById('css01');
-    var css02 = document.getElementById('css02');
-
-    css01.addEventListener('click', function() {
-        csschange = document.getElementById('css').href='./CSS/style.css';
+    $css01.addEventListener('click', function() {
+        changeCSS('style');
     });
 
-    css02.addEventListener('click', function() {
-        csschange = document.getElementById('css').href='./CSS/style2.css';
+    $css02.addEventListener('click', function() {
+        changeCSS('style2');
     });
+
+    function changeCSS(newCSSFileName){
+        activeCSS = newCSSFileName;
+        updateCSS();
+    }
+
+    function updateCSS(){
+        $cssLink.href = `./CSS/${activeCSS}.css`;
+    }
+
+    printd.addEventListener('click', function() {
+        window.print();
+    })
 })

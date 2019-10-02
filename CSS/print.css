@@ -1,10 +1,3 @@
-body{
-    background-color: #ffffff;
-    color: #000000;
-    margin: 10px;
-    font-size: 12px;
-}
-
 .imggg{
     display:none;
 }
@@ -16,13 +9,15 @@ body{
 .mimi{
     width: 100px;
     height: 140px;
-    margin-left: 80%; 
 }
 
 .entete{
-    order: 1;
-    margin-bottom: 20px;
-    flex-direction: column;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: #2c2615aa;
+    border: solid;
+    border-radius: 20px;
 }
 
 h1{
@@ -39,5 +34,18 @@ h1{
 }
 
 .menus{
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mimicont{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+body{
+    background-color: #ffffff;
+    color: #000000;
+    margin: 10px;
+    font-size: 12px;
 }
