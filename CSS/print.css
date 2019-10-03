@@ -1,51 +1,67 @@
-.imggg{
-    display:none;
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+
+/* Partie css pour le corp du HTML */
+
+body {
+    font-family: 'Grenze', serif;
+    color: #25baff;
+    background: #ffffff;
+    font-size: 120%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    font-size: 13px;
 }
 
-.imggg2{
+/* Partie du css pour le corp du CV */
+
+/* Rendre invisible les imggg, imggg2, video ainsi que cssbut sur le print */
+
+.video,
+.cssbut,
+.imggg2,
+.imggg {
     display: none;
 }
 
-.mimi{
+/* valeur CSS pour la photo  */
+.mimi {
     width: 100px;
     height: 140px;
+    border: #2c2615;
+    border-radius: 20px;
 }
 
-.entete{
-    display:flex;
+/* valeur pour le conteneur photo + laser */
+.mimicont {
+    width: 100;
+    height: 150;
+
+}
+
+/* valeur conteneur en-tete */
+.entete {
+    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background: #2c2615aa;
+    background: #ffffffaa;
     border: solid;
     border-radius: 20px;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
+/* valeur pour la marge */
+.marge {
+    background: #ffffffaa;
+    border: solid;
+    border-radius: 25px;
+    width: 12%;
+    margin: 20px;
 }
 
-.video{
-    display:none;
-}
-
-.cssbut{
-    display:none;
-}
-
-.menus{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.mimicont{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-body{
-    background-color: #ffffff;
-    color: #000000;
-    margin: 10px;
-    font-size: 12px;
+/* valeur pour le corp du CV */
+.corpcv {
+    background: #ffffffaa;
+    border: solid;
+    border-radius: 20px;
+    margin-top: 5%;
 }
