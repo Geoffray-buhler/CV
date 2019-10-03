@@ -142,8 +142,9 @@ video#bgvideo {
     align-items: center;
 }
 
-@media screen and (max-width: 502px){
-    .marge{
-        display:none;
+/* css pour portable ou petite resolution */
+@media screen and (max-width: 502px) {
+    .marge {
+        display: none;
     }
 }
