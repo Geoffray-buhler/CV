@@ -143,7 +143,7 @@ video#bgvideo {
 }
 
 /* css pour portable ou petite resolution */
-@media screen and (max-width: 502px) {
+@media screen and (max-width: 1024px) {
     .marge {
         display: none;
     }
