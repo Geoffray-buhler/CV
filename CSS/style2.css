@@ -141,3 +141,9 @@ video#bgvideo {
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 502px){
+    .marge{
+        display:none;
+    }
+}
