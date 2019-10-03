@@ -223,6 +223,7 @@ h2 {
 .infos {
     display: flex;
     justify-content: space-evenly;
+    margin-left: 50px;
 }
 
 /* faire disparaitre la video  */
@@ -283,5 +284,9 @@ h2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
