@@ -55,6 +55,7 @@ body {
 
 /* valeur pour l'en-tete du CV */
 .entete {
+    padding: 5px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -78,6 +79,7 @@ body {
     border: solid;
     border-radius: 20px;
     margin-top: 5%;
+    padding: 5px;
 }
 
 /* initialisation de la video en Background ainsi que de la rendre visible en auto */
