@@ -1,67 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
-
-/* Partie css pour le corp du HTML */
-
-body {
-    font-family: 'Grenze', serif;
-    color: #25baff;
-    background: #ffffff;
-    font-size: 120%;
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
-    font-size: 13px;
-}
-
-/* Partie du css pour le corp du CV */
-
-/* Rendre invisible les imggg, imggg2, video ainsi que cssbut sur le print */
-
-.video,
-.cssbut,
-.imggg2,
-.imggg {
+video#bgvideo {
     display: none;
+    position: none;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(../vid/Flower26790.mp4) no-repeat;
+    background-size: cover;
 }
 
-/* valeur CSS pour la photo  */
-.mimi {
-    width: 100px;
-    height: 140px;
-    border: #2c2615;
-    border-radius: 20px;
+body{
+    color:#0f6992;
 }
 
-/* valeur pour le conteneur photo + laser */
-.mimicont {
-    width: 100;
-    height: 150;
-
-}
-
-/* valeur conteneur en-tete */
-.entete {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    background: #ffffffaa;
+.custom-border {
+    background: #2c2615aa;
     border: solid;
-    border-radius: 20px;
+    border-color: #25baff;
+    border-radius: 2rem;
 }
 
-/* valeur pour la marge */
-.marge {
-    background: #ffffffaa;
-    border: solid;
-    border-radius: 25px;
-    width: 12%;
-    margin: 20px;
+.w-10 {
+    width: 10%!important;
 }
 
-/* valeur pour le corp du CV */
-.corpcv {
-    background: #ffffffaa;
-    border: solid;
-    border-radius: 20px;
-    margin-top: 5%;
+
+.right {
+    bottom: 4rem;
+    right: 4rem;
+}
+
+.social {
+    display:none;
 }

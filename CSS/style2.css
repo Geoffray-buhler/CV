@@ -1,87 +1,3 @@
-/* initialisation des import pour le css */
-@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
-
-/* initialisation des differente animation en CSS */
-@keyframes slide {
-    0% {
-        transform: translate3d(0px, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(-400px, 0, 0);
-    }
-}
-
-@keyframes slide-out {
-    0% {
-        transform: translate3d(-400px, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(0px, 0, 0);
-    }
-}
-
-/* partie pour le corp du CSS */
-body {
-    font-family: 'Grenze', serif;
-    color: #25baff;
-    background: linear-gradient(#ffffff, #06b2b8);
-    font-size: 120%;
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
-}
-
-/* rendre les laser du chat invisible */
-.imggg,
-.imggg2 {
-    display: none;
-}
-
-/* valeur pour la photo */
-.mimi {
-    width: 100px;
-    height: 140px;
-    border: #2c2615;
-    border-radius: 20px;
-}
-
-/* valeur pour le conteneur de la photo */
-.mimicont {
-    width: 100;
-    height: 150;
-}
-
-/* valeur pour l'en-tete du CV */
-.entete {
-    padding: 5px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    background: #2c2615aa;
-    border: solid;
-    border-radius: 20px;
-}
-
-/* valeur pour faire apparaitre la marge et la rendre utile */
-.marge {
-    background: #2c2615aa;
-    border: solid;
-    border-radius: 25px;
-    width: 12%;
-    margin: 20px;
-}
-
-/* valeur pour le corp du CV */
-.corpcv {
-    background: #2c2615aa;
-    border: solid;
-    border-radius: 20px;
-    margin-top: 5%;
-    padding: 5px;
-}
-
 /* initialisation de la video en Background ainsi que de la rendre visible en auto */
 video#bgvideo {
     position: fixed;
@@ -96,57 +12,28 @@ video#bgvideo {
     background-size: cover;
 }
 
-/* partie pour le menu contextuelle animé */
-
-/* valeur pour le background du menu contextuelle */
-.imgbande {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -50;
+body{
+    color:#25baff;
 }
 
-/* valeur pour le conteneur des boutons et mise en place de celui-ci */
-.cssbut {
-    transform: translate3d(-300px, 0, 0);
-    position: absolute;
-    display: flex;
-    width: 495px;
-    height: 120px;
-    right: -470px;
-    align-items: center;
-    justify-content: center;
-    animation: slide-out 1s ease-in-out;
-    animation-fill-mode: forwards;
+.custom-border {
+    background: #2c2615aa;
+    border: solid;
+    border-color: #25baff;
+    border-radius: 2rem;
 }
 
-/* initialisation des valeur de l'animation suite au passage de la souris dessus */
-.cssbut:hover {
-    animation: slide 1s ease-in-out;
-    animation-fill-mode: forwards;
+.w-10 {
+    width: 10%!important;
 }
 
-/* valeur pour les boutons */
-#css01,
-#css02,
-#printd {
-    width: 100px;
-    height: 30px;
-    z-index: 100;
-    margin-right: 10px;
+.right {
+bottom:5rem;
+right:4rem;
 }
 
-/* initialisation du conteneur des boutons du menu contextuelle */
-.butcont {
-    display: flex;
-    align-items: center;
-}
+.social {
 
-/* css pour portable ou petite resolution */
-@media screen and (max-width: 1024px) {
-    .marge {
-        display: none;
-    }
+    width:200px;
+    font-size:2rem;
 }

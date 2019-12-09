@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- lien vers les css utilisés -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link id="css" href="./CSS/style2.css" type="text/css" rel="stylesheet" media="screen">
     <link href="./CSS/print.css" type="text/css" rel="stylesheet" media="print">
@@ -18,104 +19,63 @@
     <title>Mon CV</title>
 </head>
 
-<!-- debut du body -->
-
 <body>
-    <!-- la classe marge reste vide car elle sert juste pour le css -->
-    <div class="marge">
-    </div>
-    <!-- div conteneur pour les boutons du menu animée -->
-    <div class="cssbut">
-        <img src="./img/bande.png" class="imgbande">
-        <div class="butcont">
-            <!-- initialisation des boutons  -->
-            <button id="css01">Theme Neon</button>
-            <button id="css02">Theme normal</button>
-            <button id="printd">Imprimé</button>
-        </div>
-    </div>
-    <!-- div conteneur pour tous les autres div du corp du CV -->
-    <div class="tous">
-        <h1>BUHLER Geoffray</h1>
-        <div class="objet">
-            <h3>Développeur web et web mobile.</h3>
-        </div>
-        <!-- div de l'en-tete qui contien les info perso  -->
-        <div class="entete">
-            <!-- conteneur pour la photo ainsi que les laser -->
-            <div class="mimicont" id="mimicont">
-                <!-- definition des image pour les laser du chat -->
-                <svg class="imggg">
-                    <path stroke-opacity="0.1" id="svg_1"
-                        d="m3,19c113,-38 212,4 212,4c0,0 -71,411 -71,411c0,0 -141,-415 -141,-415z" fill-opacity="0.55"
-                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null"
-                        stroke="#ffffff" fill="hsl(90, 100%, 50%)" />
-                </svg>
-                <svg class="imggg2">
-                    <path stroke-opacity="0.1" id="svg_1"
-                        d="m3,19c113,-38 212,4 212,4c0,0 -71,411 -71,411c0,0 -141,-415 -141,-415z" fill-opacity="0.55"
-                        stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null"
-                        stroke="#ffffff" fill="hsl(90, 100%, 50%)" />
-                </svg>
-                <!-- emplacement pour la photo -->
-                <img class="mimi" src="./img/17662257_1163602267101936_1623276077705068544_n(1).jpg"
-                    alt="petit chat tous mignon">
-                <audio id="audiolisten">
-                    <source src="./audio/Caramell.mp3" control preload="auto">
-                </audio>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ml-5">
+                <h2>Geoffray BUHLER </h2>
+                <h1>Développeur web et web mobile.</h1>
             </div>
-            <!-- div conteneur pour les infos perso -->
-            <div class="infos">
-                <br>
+        </div>
+        <div class="row">
+            <div class="col-12 custom-border p-3 mb-5 mt-5">
                 <div><i class="fas fa-home"></i> : 16 cours louis blanc 83500 la-seyne-sur-mer</div>
                 <div><i class="fas fa-phone-alt"></i> : 0673373770</div>
                 <div><i class="far fa-envelope"></i> : geoffray.buhler@gmail.com</div>
                 <div><i class="fas fa-car-alt"></i> : scooter</div>
-                <br>
+                <div class="social text-center"><a href="https://www.linkedin.com/in/geoffray-buhler-93100099"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Geoffray-buhler"><i class="fab fa-github"></i></a></div>
+            </div>
+            <div class="col-12">
+                <img class="img-thumbnail rounded right w-10 position-absolute" src="./img/17662257_1163602267101936_1623276077705068544_n(1).jpg"
+                    alt="petit chat tous mignon">
             </div>
         </div>
-        <!-- debut du corp du CV -->
-        <div class="corpcv">
-            <h2>Compétences</h2>
-            <div class="comp">
-                <p>Soudure à l'arc, au TIG, au MIG, lecture de plan, création de plan, utilisation d'outils de
-                    chaudronnerie.</p>
+        <div class="row">
+            <div class="col-12 custom-border p-3 mb-5">
+                <h2>Objet : </h2>
+                <p>Faire un stage dans le monde du devellopement web.</p>
             </div>
-            <h2>Expériences</h2>
-            <div class="EXP">
-                <ol>
-                    <li>Chaudronnier 2014-2017 DCNS (Toulon)</li>
-                    <li>Chaudronnier STIO (Villers saint paul)</li>
-                    <li>Préparateur de commande Mission intérimaire (Castorama Compiègne)</li>
-                    <li>Vendeur 2013 Castorama Jardin (Melun)</li>
-                    <li>Vendeur 2009-2010 Bazar du bizarre – Tradia (Compiègne)</li>
-                    <li>Vendeur 2008 – 2009 Tube surf (Cork, Irland)</li>
-                    <li>Vendeur 2008 – 2009 Carrefour Zone Nord Art de la table (Amiens)</li>
-                    <li>Vendeur 2007-2008 Bazar du bizarre (Compiègne)</li>
-                </ol>
-            </div>
-            <h2>Cursus</h2>
-            <div class="CU">
-                <ol>
-                    <li>Bac pro Chaudronnerie (2016)</li>
-                    <li>Certificat d'Aptitude Professionnelle Chaudronnerie (2015)</li>
-                    <li>Baccalauréat Professionnel Commerce (2010)</li>
-                    <li>Brevet étude professionnelle (2008)</li>
-                    <li>1er année Brevet d’étude professionnelle (2006)</li>
-                </ol>
-            </div>
-            <h2>Centres d'intérêts</h2>
-            <div class="CI">
-                <p>Bricolage, Informatique (Programmation), musique, voyages, théâtre, arts du cirque</p>
+        </div>
+        <div class="row">
+            <div class="col-12 custom-border p-3">
+                    <h2>Compétences</h2>
+                    <p>Soudure à l'arc, au TIG, au MIG, lecture de plan, création de plan, utilisation d'outils de
+                            chaudronnerie.</p>
+                    <h2>Parcour professionnelle</h2>
+                    <ol>
+                            <li>Chaudronnier 2014-2017 DCNS (Toulon)</li>
+                            <li>Chaudronnier STIO (Villers saint paul)</li>
+                            <li>Préparateur de commande Mission intérimaire (Castorama Compiègne)</li>
+                            <li>Vendeur 2013 Castorama Jardin (Melun)</li>
+                            <li>Vendeur 2009-2010 Bazar du bizarre – Tradia (Compiègne)</li>
+                            <li>Vendeur 2008 – 2009 Tube surf (Cork, Irland)</li>
+                            <li>Vendeur 2008 – 2009 Carrefour Zone Nord Art de la table (Amiens)</li>
+                            <li>Vendeur 2007-2008 Bazar du bizarre (Compiègne)</li>
+                        </ol>
+                        <h2>Cursus</h2>
+                        <ol>
+                                <li>Licence Informatique Univesité d'Amiens (2010-2012)</li>
+                            </ol>
+                            <h2>Centres d'intérêts</h2>
+                            <p>Bricolage, Informatique, musique, voyages, théâtre, arts du cirque</p>
             </div>
         </div>
     </div>
-    <!-- initialisation de fond animée pour le CV -->
     <video muted autoplay loop poster="./img/fond.png" id="bgvideo" class="video">
         <source src="./vid/Flower26790.mp4" preload="auto" type="video/mp4">
         <source src="./vid/Flower26790.webm" preload="auto" type="video/webm">
     </video>
-    <!-- lien pour le Javascript -->
-    <script type="text/javascript" src="./JS/audio.js"></script>
 </body>
+
 </html>
