@@ -16,9 +16,10 @@ body{
     color:#0f6992;
 }
 
-.custom-border {
+.custom-border-print {
     background: #2c2615aa;
-    border: solid;
+    border-top: solid;
+    border-bottom: solid;
     border-color: #25baff;
     border-radius: 2rem;
 }
@@ -29,6 +30,7 @@ body{
 
 
 .right {
+    display: none;
     bottom: 4rem;
     right: 4rem;
 }

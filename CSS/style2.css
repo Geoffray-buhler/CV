@@ -14,6 +14,7 @@ video#bgvideo {
 
 body{
     color:#25baff;
+    font-size: 1.1rem;
 }
 
 .custom-border {
@@ -24,16 +25,15 @@ body{
 }
 
 .w-10 {
-    width: 10%!important;
+    width: 12%!important;
 }
 
 .right {
-bottom:5rem;
+bottom:8rem;
 right:4rem;
 }
 
 .social {
-
     width:200px;
     font-size:2rem;
 }
