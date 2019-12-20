@@ -13,8 +13,16 @@ video#bgvideo {
 }
 
 body{
-    color:#25baff;
+    color:#ffffff;
     font-size: 1.1rem;
+}
+
+i{
+    color: #25baff;
+}
+
+h1 ,h2 ,h3, h4, h5 {
+    color: #25baff;
 }
 
 .custom-border {
