@@ -20,6 +20,10 @@ body{
     color:#0f6992;
 }
 
+.progress{
+    display: block;
+}
+
 .custom-border-print {
     background: #2c2615aa;
     border-top: solid;
@@ -44,4 +48,46 @@ body{
 
 .little-text {
     font-size: 0.8em;
+}
+
+.progress {
+    position: relative;
+}
+.progress:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    border-bottom: 2rem solid #eeeeee;
+}
+.progress-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 2rem solid #337ab7;
+}
+.bg-success {
+    border-bottom-color: #67c600;
+}
+.bg-info {
+    border-bottom-color: #5bc0de;
+}
+.bg-warning {
+    border-bottom-color: #ff7707;
+}
+.bg-danger {
+    border-bottom-color: #ee2f31;
+}
+
+.border-custom {
+    border-right: solid;
+    border-left: solid;
+    border-color: #25baff;
+    border-radius: 2rem;
 }

@@ -49,3 +49,11 @@ h1 ,h2 ,h3, h4, h5 {
 .little-text {
     font-size: 0.8em;
 }
+
+.bg-warning {
+    background-color: #ff7707!important;
+}
+
+.bg-bar-custom {
+    background-color: #00a8b4!important;
+}
