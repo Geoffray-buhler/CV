@@ -41,3 +41,7 @@ body{
 .social {
     display:none;
 }
+
+.little-text {
+    font-size: 0.8em;
+}

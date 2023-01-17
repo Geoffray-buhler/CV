@@ -37,11 +37,15 @@ h1 ,h2 ,h3, h4, h5 {
 }
 
 .right {
-bottom:8rem;
-right:4rem;
+    bottom:8rem;
+    right:4rem;
 }
 
 .social {
     width:200px;
     font-size:2rem;
+}
+
+.little-text {
+    font-size: 0.8em;
 }
